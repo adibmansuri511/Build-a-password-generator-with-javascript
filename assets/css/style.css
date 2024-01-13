@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #e5e8ee, #b0bee0, #7f94d0, #4f6bbe, #1143aa);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 300px;
+    height: 500px;
+    border: 5px solid #050dc9;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #8283ff6e;
+    overflow-y: scroll;
+}
+
+.app::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+#addNew {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #283aa7cc;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fa-plus {
+    background-color: #050dc9;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#tasks {
+    display: grid;
+    gap: 15px;
+}
+
+#tasks div {
+    display: grid;
+    gap: 6px;
+    background-color: #283aa7;
+    border: 3px solid #050dc9;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.options {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 5px;
+}
+
+.options i {
+    cursor: pointer;
+}
+
+#errorMsg {
+    color: red;
+}
